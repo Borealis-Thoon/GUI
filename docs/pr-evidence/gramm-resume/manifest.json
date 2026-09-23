@@ -1,0 +1,55 @@
+{
+  "source_repository": "GralDispersionModel/GUI",
+  "source_commit": "60dafd9981f1f0bc4d000cbec11d963362b2d6da",
+  "pull_request": "https://github.com/GralDispersionModel/GUI/pull/98",
+  "capture_method": "Actual WinForms controls rendered by tests/GrammResumeGui",
+  "fixture_data": true,
+  "live_production_capture": false,
+  "gui_assembly_sha256": "D7D668E81986548A0E1F754DC1A24C3827DD0D4D4D3A06CF2E59214609F50A0C",
+  "tests": 12,
+  "assertions": 835,
+  "images": [
+    {
+      "file": "dashboard_balanced_79.png",
+      "width": 1396,
+      "height": 799,
+      "bytes": 45265,
+      "sha256": "a54a9cc603412e6d02a61e9e1059978b69bdb08e575a8df8825ef008636a7076"
+    },
+    {
+      "file": "dashboard_10_420.png",
+      "width": 436,
+      "height": 799,
+      "bytes": 23547,
+      "sha256": "ff391acadc894cce8fc139fc24f8a6bc4d2254750196aa37adcd2faf0acbbc64"
+    },
+    {
+      "file": "dashboard_64_900.png",
+      "width": 916,
+      "height": 799,
+      "bytes": 33215,
+      "sha256": "7398257aacda027eeff431466f65993c8dd3dd42c7b9e8ee9e7c6b398ced0676"
+    },
+    {
+      "file": "main_gramm_summary.png",
+      "width": 246,
+      "height": 344,
+      "bytes": 9834,
+      "sha256": "1b74f0ff3b9540ca94f9d03491b6531e5b53e166d1d5672393d7977accb6f695"
+    },
+    {
+      "file": "main_cpu_settings.png",
+      "width": 245,
+      "height": 186,
+      "bytes": 5467,
+      "sha256": "35cc0b2dbb60d06fde6b6e7603909869bb3628f8892f639026a26e8140ee991f"
+    },
+    {
+      "file": "cpu_placement_dialog.png",
+      "width": 466,
+      "height": 279,
+      "bytes": 10933,
+      "sha256": "1eabc9e43a59d5dcaa0c0a0091bc57224aed2c38296df91ce9bce8a146ac5d19"
+    }
+  ]
+}
