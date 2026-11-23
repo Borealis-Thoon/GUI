@@ -1,0 +1,395 @@
+{
+  "baseline_commit": "6fff0d0053f2b82630a254bfd3dadc66217c2558",
+  "fixture": "AscendingBridge 26x23x20, fixed direction, Max_Proc=1 and TKE off; same 48-row fixture as weather-situation-reset-evidence.json.",
+  "method": "Run case rows 7-20 four times in fresh directories with the same albeq.dat, changing only the iteration options in the 34 cached stripe calls, in default/serial/default/serial order. Four Windows processes ran successively. Per invocation, record the maximum simultaneously active range bodies using an atomic counter. Each field comparison is between identical case IDs in two processes with the same policy. Compare WND int16 payload and inflated SCL members.",
+  "programs": [
+    "UVWIMP",
+    "PRIMP",
+    "TIMP",
+    "FIMP",
+    "PRANDTL"
+  ],
+  "reference_note": "Serial cold vs uninstrumented default cold at row 7 changed 124 of 35,880 wind components, maximum 0.01 m/s, and UST/OBL member bytes.",
+  "outcomes": {
+    "default": {
+      "maximum_simultaneously_active_stripes_per_sweep": [
+        {
+          "PRIMP": 2,
+          "UVWIMP": 2,
+          "TIMP": 2,
+          "PRANDTL": 2,
+          "FIMP": 2
+        },
+        {
+          "PRIMP": 2,
+          "UVWIMP": 2,
+          "TIMP": 2,
+          "PRANDTL": 2,
+          "FIMP": 2
+        }
+      ],
+      "samples": [
+        {
+          "field": 7,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 8,
+          "unequal_wind_components": 3,
+          "max_abs_m_s": 0.01,
+          "changed_scl_members": [
+            "ust"
+          ]
+        },
+        {
+          "field": 9,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 10,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 11,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 12,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 13,
+          "unequal_wind_components": 1,
+          "max_abs_m_s": 0.01,
+          "changed_scl_members": []
+        },
+        {
+          "field": 14,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 15,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 16,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 17,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 18,
+          "unequal_wind_components": 1,
+          "max_abs_m_s": 0.01,
+          "changed_scl_members": []
+        },
+        {
+          "field": 19,
+          "unequal_wind_components": 2,
+          "max_abs_m_s": 0.01,
+          "changed_scl_members": []
+        },
+        {
+          "field": 20,
+          "unequal_wind_components": 2,
+          "max_abs_m_s": 0.01,
+          "changed_scl_members": []
+        },
+        {
+          "field": 55,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 56,
+          "unequal_wind_components": 4,
+          "max_abs_m_s": 0.01,
+          "changed_scl_members": []
+        },
+        {
+          "field": 57,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 58,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 59,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 60,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 61,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 62,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 63,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 64,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 65,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 66,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 67,
+          "unequal_wind_components": 7,
+          "max_abs_m_s": 0.01,
+          "changed_scl_members": [
+            "ust"
+          ]
+        },
+        {
+          "field": 68,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        }
+      ]
+    },
+    "serial": {
+      "maximum_simultaneously_active_stripes_per_sweep": [
+        {
+          "PRIMP": 1,
+          "UVWIMP": 1,
+          "TIMP": 1,
+          "PRANDTL": 1,
+          "FIMP": 1
+        },
+        {
+          "PRIMP": 1,
+          "UVWIMP": 1,
+          "TIMP": 1,
+          "PRANDTL": 1,
+          "FIMP": 1
+        }
+      ],
+      "samples": [
+        {
+          "field": 7,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 8,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 9,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 10,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 11,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 12,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 13,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 14,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 15,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 16,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 17,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 18,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 19,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 20,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 55,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 56,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 57,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 58,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 59,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 60,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 61,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 62,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 63,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 64,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 65,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 66,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 67,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        },
+        {
+          "field": 68,
+          "unequal_wind_components": 0,
+          "max_abs_m_s": 0.0,
+          "changed_scl_members": []
+        }
+      ]
+    }
+  }
+}

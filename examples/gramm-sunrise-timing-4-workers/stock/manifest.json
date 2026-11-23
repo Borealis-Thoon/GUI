@@ -1,0 +1,44 @@
+{
+  "gui_scheduler_source_commit": "29c534c1b39526aa47b33d1cfeab4a868acbac05",
+  "gui_scheduler_source_sha256": "22ffc90d8de1c736fa2f140ffd82341ed58169a752da5fa49f08215b51d53e8c",
+  "stock_engine_source_commit": "1cfd22dfa3a26de39ee050af0e92324b9b1b96e7",
+  "cpu": "AMD Ryzen 9 9950X3D 16-Core Processor",
+  "logical_processors": 32,
+  "os": "Microsoft Windows NT 10.0.26300.0",
+  "python": "3.12.14",
+  "dotnet_runtime_inventory": [
+    "Microsoft.AspNetCore.App 10.0.12",
+    "Microsoft.NETCore.App 8.0.34",
+    "Microsoft.NETCore.App 9.0.23",
+    "Microsoft.NETCore.App 10.0.12",
+    "Microsoft.WindowsDesktop.App 8.0.34",
+    "Microsoft.WindowsDesktop.App 9.0.23",
+    "Microsoft.WindowsDesktop.App 10.0.12"
+  ],
+  "competing_gramm_processes_at_start": 0,
+  "source_inputs_sha256": {
+    "ggeom.asc": "2c427525f18ce691376d3cb3e2d02fa6fe809bf9d78aafc92c0c03d3633d974f",
+    "GRAMM.geb": "16b05783a04da6e22b7c296fbd24fa47e58794b656ced5c3417d443a146f46c6",
+    "GRAMMin.dat": "fe337073bc42a0befe898d4262f3e94eb16e39930c5af62997e772adb5a1945f",
+    "IIN.dat": "ac15ec4d93cb6c783455a06b5d447397d77c8975ffe0422ef576d73072153a88",
+    "landuse.asc": "b74d20412d6c4f3ac55253d0c053734769da71285e70cc4f346795562042679b",
+    "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f",
+    "meteopgt.all": "b22dfb3046a4abd0d03d593e303c4ffa464e4d27721b8807772f3b9ace3a7175"
+  },
+  "benchmark_inputs_sha256": {
+    "ggeom.asc": "2c427525f18ce691376d3cb3e2d02fa6fe809bf9d78aafc92c0c03d3633d974f",
+    "GRAMM.geb": "16b05783a04da6e22b7c296fbd24fa47e58794b656ced5c3417d443a146f46c6",
+    "GRAMMin.dat": "f021889324464b0e4da0ce2089b0fb1e5734d940870f60b149daef2a8b62b631",
+    "IIN.dat": "067e74af1994e3c34c73e24cc9b80f8c4f3c0a1a44d0e89614eb23bb22122332",
+    "landuse.asc": "b74d20412d6c4f3ac55253d0c053734769da71285e70cc4f346795562042679b",
+    "Max_Proc.txt": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+    "meteopgt.all": "c87a8ffe27b896e94c3348861ccb69a7e915cab7f890136b49f820ce8fdcc8fe"
+  },
+  "engine_files_sha256": {
+    "GRAMM.exe": "bf42ff9e759d4b59216c9513da8d82d1aa9946371c659619bab4117a4d77717f",
+    "GRAMM.dll": "2685b35b10a6f061a3b8e72ef772c171a399a9e9d075f67517c32151cf7dd360",
+    "GRAMM.deps.json": "99505c58b51540a3010c2502bbadfbfc07fbc3791893ead22834ac230161f3db",
+    "GRAMM.runtimeconfig.json": "314b2b1cb168fe78c634a0a0904f769854ff3122912500f1e1dcdbe2dd71f983"
+  },
+  "planner_dll_sha256": "21ac68bcfb7be339c51e4f192bfa9ffff9c8c074e99a36058eb40abc0b07c39c"
+}

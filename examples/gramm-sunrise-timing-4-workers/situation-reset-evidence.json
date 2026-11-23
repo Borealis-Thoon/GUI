@@ -1,0 +1,194 @@
+{
+  "source": "GralDispersionModel/GRAMM@1cfd22dfa3a26de39ee050af0e92324b9b1b96e7",
+  "fixture": {
+    "geometry": "AscendingBridge",
+    "dimensions_xyz": [
+      26,
+      23,
+      20
+    ],
+    "grid_spacing_m": 300,
+    "Max_Proc.txt": 1,
+    "GRAMMin.dat_original_situations": 48,
+    "IIN.dat_modelling_time_s": 1300,
+    "meteopgt.all_header": "10,1,15,",
+    "row_1_to_20": "2.3,1.50,6,2.0833333333",
+    "row_21_to_48": "2.3,1.50,4,2.0833333333",
+    "input_sha256": {
+      "ggeom.asc": "2c427525f18ce691376d3cb3e2d02fa6fe809bf9d78aafc92c0c03d3633d974f",
+      "GRAMM.geb": "16b05783a04da6e22b7c296fbd24fa47e58794b656ced5c3417d443a146f46c6",
+      "GRAMMin.dat": "f021889324464b0e4da0ce2089b0fb1e5734d940870f60b149daef2a8b62b631",
+      "IIN.dat": "067e74af1994e3c34c73e24cc9b80f8c4f3c0a1a44d0e89614eb23bb22122332",
+      "landuse.asc": "b74d20412d6c4f3ac55253d0c053734769da71285e70cc4f346795562042679b",
+      "Max_Proc.txt": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+      "meteopgt.all": "c87a8ffe27b896e94c3348861ccb69a7e915cab7f890136b49f820ce8fdcc8fe"
+    },
+    "shared_albeq_sha256": "27bd632bf614b7bbe535dd4902f47022a83fd08113022ebd41e139ed0bc86b87"
+  },
+  "method": {
+    "reference": "GRAMM.exe <fresh-working-directory> 7 7",
+    "comparison": "GRAMM.exe <separate-fresh-working-directory> 6 7",
+    "setup": "Populate each directory with the seven inputs and the same complete albeq.dat generated for this geometry. Launch one process at a time in a real Windows console with a 260-second timeout. The two commands keep the original row number 7.",
+    "diagnostic_intervention": "Immediately before the integration loop in Program.cs (baseline line 440), clear the named arrays with Array.Clear on each innermost row and assign zero to the named counter. Apply each intervention on every processed situation in that process. The stock output of row 7 when run as the first situation was also checked against the instrumented reference.",
+    "wnd": "Check the 20-byte header, then compare each of the 35,880 signed int16 components. Divide the largest absolute difference by 100 to convert to m/s.",
+    "scl": "Compare the uncompressed bytes of each archived UST, OBL and SCL member."
+  },
+  "field_7_ablations": [
+    {
+      "reset": "none",
+      "changed_wnd_components": 24170,
+      "max_abs_m_s": 0.8,
+      "changed_scl_member_extensions": [
+        "obl",
+        "scl",
+        "ust"
+      ],
+      "pre_first_step_stripe_counter": 106,
+      "first_step_mass_divergence": 1248.8822021484375
+    },
+    {
+      "reset": "WN only",
+      "changed_wnd_components": 18,
+      "max_abs_m_s": 0.01,
+      "changed_scl_member_extensions": [
+        "obl",
+        "ust"
+      ],
+      "pre_first_step_stripe_counter": 106,
+      "first_step_mass_divergence": 1248.8822021484375
+    },
+    {
+      "reset": "StripeCounter only",
+      "changed_wnd_components": 24170,
+      "max_abs_m_s": 0.8,
+      "changed_scl_member_extensions": [
+        "obl",
+        "scl",
+        "ust"
+      ],
+      "pre_first_step_stripe_counter": 0,
+      "first_step_mass_divergence": 1247.0789794921875
+    },
+    {
+      "reset": "WN and StripeCounter",
+      "changed_wnd_components": 0,
+      "max_abs_m_s": 0.0,
+      "changed_scl_member_extensions": [],
+      "pre_first_step_stripe_counter": 0,
+      "first_step_mass_divergence": 1247.0789794921875
+    },
+    {
+      "reset": "other residual arrays only",
+      "changed_wnd_components": 24170,
+      "max_abs_m_s": 0.8,
+      "changed_scl_member_extensions": [
+        "obl",
+        "scl",
+        "ust"
+      ]
+    },
+    {
+      "reset": "all residual arrays and StripeCounter",
+      "changed_wnd_components": 0,
+      "max_abs_m_s": 0.0,
+      "changed_scl_member_extensions": []
+    }
+  ],
+  "clean_release_comparisons": [
+    {
+      "comparison": "stock cold vs instrumented cold",
+      "field": 7,
+      "changed_wnd_components": 0,
+      "max_abs_m_s": 0.0,
+      "changed_scl_members": []
+    },
+    {
+      "comparison": "fixed cold vs fixed after predecessor 7",
+      "field": 7,
+      "changed_wnd_components": 0,
+      "max_abs_m_s": 0.0,
+      "changed_scl_members": []
+    },
+    {
+      "comparison": "stock cold vs fixed cold 7",
+      "field": 7,
+      "changed_wnd_components": 0,
+      "max_abs_m_s": 0.0,
+      "changed_scl_members": []
+    },
+    {
+      "comparison": "fixed cold vs fixed after predecessor 19",
+      "field": 19,
+      "changed_wnd_components": 0,
+      "max_abs_m_s": 0.0,
+      "changed_scl_members": []
+    },
+    {
+      "comparison": "stock cold vs fixed cold 19",
+      "field": 19,
+      "changed_wnd_components": 0,
+      "max_abs_m_s": 0.0,
+      "changed_scl_members": []
+    },
+    {
+      "comparison": "fixed cold vs fixed after predecessor 21",
+      "field": 21,
+      "changed_wnd_components": 0,
+      "max_abs_m_s": 0.0,
+      "changed_scl_members": []
+    }
+  ],
+  "source_anchors": {
+    "reset_site": "src/Read_Ini_Files.cs:660 (ClearArrays, stock)",
+    "writes_previous_WN": "src/STORE.cs:169",
+    "reads_WN_for_vertical_scalar_fluxes": "src/TERMI_PS.cs:114,122,150-151",
+    "scalar_solver_order": "src/SIMPLE.cs:62-107,121",
+    "buoyancy_uses_temperature_and_humidity": "src/UVWIMP.cs:107-110",
+    "stripe_counter_declaration": "src/ProgramDeclarations.cs:1687",
+    "stripe_layout": "src/Read_Ini_Files.cs:845-857",
+    "selects_sweep": "src/UVWIMP.cs:130-172",
+    "within_stripe_reverse_direction": "src/UVWIMP.cs:243-249"
+  },
+  "limitations": "One measured observation per listed intervention. The two reset variables are sufficient in these controlled cases. This does not establish bitwise equality in other configurations or remove independent parallel scheduling effects.",
+  "other_residual_arrays": [
+    "SUXYZ",
+    "RITSCH",
+    "A_PS",
+    "B_PS",
+    "C_PS",
+    "H_PS",
+    "AWEST_PS",
+    "ASOUTH_PS",
+    "AEAST_PS",
+    "ANORTH_PS",
+    "AP0_PS",
+    "AIM",
+    "BIM",
+    "CIM",
+    "AW1",
+    "AS1",
+    "AE2",
+    "AN2",
+    "AP0",
+    "F1U",
+    "F2U",
+    "F1V",
+    "F2V",
+    "F1W",
+    "F2W",
+    "DIMU",
+    "DIMV",
+    "DIMW",
+    "AP",
+    "AB",
+    "AT",
+    "AW",
+    "AE",
+    "AS",
+    "AN",
+    "U_TEMP",
+    "V_TEMP",
+    "W_TEMP",
+    "RADIATION"
+  ]
+}

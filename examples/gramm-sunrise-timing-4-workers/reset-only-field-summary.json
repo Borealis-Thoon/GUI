@@ -1,0 +1,141 @@
+{
+  "engine_commit": "6fff0d0053f2b82630a254bfd3dadc66217c2558",
+  "scope": "Intermediate engine with WN and StripeCounter resets; cached stripe calls still use the stock parallel settings.",
+  "paired_four_worker_comparisons": 4,
+  "within_layout_comparisons_per_layout": 6,
+  "field_results": {
+    "paired_AB": {
+      "original": {
+        "wind_different_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          11,
+          14,
+          15,
+          18,
+          19,
+          20,
+          33,
+          37,
+          41,
+          45,
+          48
+        ],
+        "scalar_different_ids": [
+          18,
+          19
+        ],
+        "wind_different_count": 20,
+        "scalar_different_count": 2,
+        "max_abs_delta_m_s": 0.01
+      },
+      "sunrise": {
+        "wind_different_ids": [
+          49,
+          50,
+          52,
+          53,
+          54,
+          55,
+          57,
+          59,
+          61,
+          62,
+          63,
+          67,
+          68
+        ],
+        "scalar_different_ids": [],
+        "wind_different_count": 13,
+        "scalar_different_count": 0,
+        "max_abs_delta_m_s": 0.01
+      }
+    },
+    "repeat_A": {
+      "original": {
+        "wind_different_ids": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          9,
+          11,
+          14,
+          19,
+          37
+        ],
+        "scalar_different_ids": [
+          19
+        ],
+        "wind_different_count": 10,
+        "scalar_different_count": 1,
+        "max_abs_delta_m_s": 0.01
+      },
+      "sunrise": {
+        "wind_different_ids": [
+          49,
+          50,
+          52,
+          54,
+          55,
+          59,
+          61,
+          62,
+          63,
+          67
+        ],
+        "scalar_different_ids": [],
+        "wind_different_count": 10,
+        "scalar_different_count": 0,
+        "max_abs_delta_m_s": 0.01
+      }
+    },
+    "repeat_B": {
+      "original": {
+        "wind_different_ids": [
+          1,
+          2,
+          3,
+          4,
+          10,
+          15,
+          18,
+          19,
+          20,
+          33,
+          41,
+          45,
+          48
+        ],
+        "scalar_different_ids": [
+          18
+        ],
+        "wind_different_count": 13,
+        "scalar_different_count": 1,
+        "max_abs_delta_m_s": 0.01
+      },
+      "sunrise": {
+        "wind_different_ids": [
+          52,
+          53,
+          55,
+          57,
+          67,
+          68
+        ],
+        "scalar_different_ids": [],
+        "wind_different_count": 6,
+        "scalar_different_count": 0,
+        "max_abs_delta_m_s": 0.01
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 ![The GRAMM panel with six instances, eight instances, and the list scrolled to show instance 8](windows-progress.png)
 
-The screenshots show the patched Windows GUI with sample counts. Each row counts final wind fields for its assigned original weather situations. Hover over a row to see its situation numbers. The file-size box includes intermediate sunrise wind fields too.
+The screenshots show sample counts in the Windows GUI. In the **Done** column, `6/11` means that the worker has written final wind fields for 6 of its 11 assigned original situations. **Left** shows 5 for that row. Hover over a row to see its situation numbers. The file-size box also counts intermediate sunrise wind fields.
 
 ## Reproduce the sunrise scheduling check
 
@@ -18,4 +18,4 @@ dotnet run --project ./SchedulerChecks.csproj -c Release "-p:GuiSource=$gui" -- 
 
 The check calls the stock engine's `Meteopgtall.Integrationtime` method. For each of 7,200 small input plans it enumerates every possible contiguous partition and checks that the GUI attains the lowest maximum nominal integration time. It also checks 11 cases covering original IDs, equal weights, extra sunrise rows and the fallback for unsupported settings. The expected output is `{"status":"pass","engineCheckedPlans":7200,"targetedCases":11}`.
 
-For one example, set the base modelling time to 1,800 seconds and use four original situations with stability classes 1, 2, 4 and 4 at 1.5 m/s. With two workers, splitting after situation 2 puts 43,200 model seconds on the longer range. Splitting after situation 1 reduces that maximum to 22,212 model seconds. Wall-clock time also depends on the solver's time steps and retries.
+The [four-worker wall-clock test](../gramm-sunrise-timing-4-workers/README.md) includes the actual worker times, the assigned situation ranges, and a comparison of the resulting wind fields.

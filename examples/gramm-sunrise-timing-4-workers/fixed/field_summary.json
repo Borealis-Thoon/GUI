@@ -1,0 +1,50 @@
+{
+  "paired_AB": {
+    "original": {
+      "wind_different_ids": [],
+      "scalar_different_ids": [],
+      "wind_different_count": 0,
+      "scalar_different_count": 0,
+      "max_abs_delta_m_s": 0.0
+    },
+    "sunrise": {
+      "wind_different_ids": [],
+      "scalar_different_ids": [],
+      "wind_different_count": 0,
+      "scalar_different_count": 0,
+      "max_abs_delta_m_s": 0.0
+    }
+  },
+  "repeat_A": {
+    "original": {
+      "wind_different_ids": [],
+      "scalar_different_ids": [],
+      "wind_different_count": 0,
+      "scalar_different_count": 0,
+      "max_abs_delta_m_s": 0.0
+    },
+    "sunrise": {
+      "wind_different_ids": [],
+      "scalar_different_ids": [],
+      "wind_different_count": 0,
+      "scalar_different_count": 0,
+      "max_abs_delta_m_s": 0.0
+    }
+  },
+  "repeat_B": {
+    "original": {
+      "wind_different_ids": [],
+      "scalar_different_ids": [],
+      "wind_different_count": 0,
+      "scalar_different_count": 0,
+      "max_abs_delta_m_s": 0.0
+    },
+    "sunrise": {
+      "wind_different_ids": [],
+      "scalar_different_ids": [],
+      "wind_different_count": 0,
+      "scalar_different_count": 0,
+      "max_abs_delta_m_s": 0.0
+    }
+  }
+}

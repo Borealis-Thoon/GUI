@@ -1,0 +1,152 @@
+{
+  "isolated": {
+    "isolated_case1_vs_stock_measured": {
+      "field_comparisons": 16,
+      "max_abs_delta_m_s": 0.01,
+      "differing_wind_ids": [
+        1,
+        49
+      ],
+      "differing_scalar_ids": [
+        1
+      ]
+    },
+    "isolated_vs_candidate_measured": {
+      "field_comparisons": 56,
+      "max_abs_delta_m_s": 0.0,
+      "differing_wind_ids": [],
+      "differing_scalar_ids": []
+    },
+    "stock_case1_vs_candidate_measured": {
+      "field_comparisons": 128,
+      "max_abs_delta_m_s": 0.01,
+      "differing_wind_ids": [
+        1,
+        49
+      ],
+      "differing_scalar_ids": [
+        1
+      ]
+    }
+  },
+  "single": {
+    "one_process_vs_candidate_measured": {
+      "field_comparisons": 544,
+      "max_abs_delta_m_s": 0.0,
+      "differing_wind_ids": [],
+      "differing_scalar_ids": []
+    }
+  },
+  "multi": {
+    "two_threads_A_vs_B": {
+      "field_comparisons": 68,
+      "max_abs_delta_m_s": 0.01,
+      "differing_wind_ids": [
+        8,
+        49,
+        56,
+        57,
+        58,
+        66,
+        68
+      ],
+      "differing_scalar_ids": []
+    },
+    "two_threads_vs_one_thread_same_split": {
+      "field_comparisons": 544,
+      "max_abs_delta_m_s": 0.01,
+      "differing_wind_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "differing_scalar_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    }
+  }
+}
