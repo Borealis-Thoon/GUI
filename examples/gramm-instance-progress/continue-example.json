@@ -1,0 +1,56 @@
+{
+  "gui_commit": "8028f10c5c58a3a4e998d6d873d94bab2975059b",
+  "tested_gui_sha256": "16EBD55B5C470F257EC2A706739CEE054EED5BF8583B6CA2D626B0D891974882",
+  "check": "Continue planning on copies of validated output, using the same corrected engine generation.",
+  "engine_processes_launched": 0,
+  "assigned_originals": [
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      7,
+      16
+    ]
+  ],
+  "control_no_file_omitted": {
+    "next_situation": [
+      3,
+      5,
+      7,
+      17
+    ],
+    "workers_scheduled": 0
+  },
+  "with_only_00010_scl_omitted": {
+    "next_situation": [
+      3,
+      5,
+      7,
+      10
+    ],
+    "workers_scheduled": 1,
+    "worker_4_reuses": [
+      7,
+      8,
+      9
+    ],
+    "worker_4_scheduled": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  }
+}

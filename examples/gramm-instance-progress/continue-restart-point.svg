@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="388" viewBox="0 0 940 388">
+<title>How a missing scalar file sets the restart point</title>
+<desc>In a worked example, a worker owns original situations 7 to 16. All the wind files exist. Only the scalar file for situation 10 is missing. Continue keeps situations 7 to 9 and recomputes 10 to 16.</desc>
+  <rect x="0" y="0" width="940" height="388" fill="#FFFFFF"/>
+  <text x="25" y="44" font-family="Segoe UI" font-size="31" font-weight="700" text-anchor="start" fill="#172938">How a missing scalar file sets the restart point</text>
+  <text x="25" y="77" font-family="Segoe UI" font-size="17" font-weight="400" text-anchor="start" fill="#43596A">This worker was assigned situations 7–16. The example uses the same engine before and after the stop.</text>
+  <line x1="25" y1="96" x2="915" y2="96" stroke="#D8E2E9" stroke-width="1"/>
+  <rect x="426" y="107" width="63" height="131" fill="#FCF0E8"/>
+  <text x="25" y="137" font-family="Segoe UI" font-size="18" font-weight="600" text-anchor="start" fill="#172938">Original situation</text>
+  <text x="250.5" y="137" font-family="Segoe UI" font-size="19" font-weight="700" text-anchor="middle" fill="#172938">7</text>
+  <text x="319.5" y="137" font-family="Segoe UI" font-size="19" font-weight="700" text-anchor="middle" fill="#172938">8</text>
+  <text x="388.5" y="137" font-family="Segoe UI" font-size="19" font-weight="700" text-anchor="middle" fill="#172938">9</text>
+  <text x="457.5" y="137" font-family="Segoe UI" font-size="19" font-weight="700" text-anchor="middle" fill="#9C431F">10</text>
+  <text x="526.5" y="137" font-family="Segoe UI" font-size="19" font-weight="700" text-anchor="middle" fill="#172938">11</text>
+  <text x="595.5" y="137" font-family="Segoe UI" font-size="19" font-weight="700" text-anchor="middle" fill="#172938">12</text>
+  <text x="664.5" y="137" font-family="Segoe UI" font-size="19" font-weight="700" text-anchor="middle" fill="#172938">13</text>
+  <text x="733.5" y="137" font-family="Segoe UI" font-size="19" font-weight="700" text-anchor="middle" fill="#172938">14</text>
+  <text x="802.5" y="137" font-family="Segoe UI" font-size="19" font-weight="700" text-anchor="middle" fill="#172938">15</text>
+  <text x="871.5" y="137" font-family="Segoe UI" font-size="19" font-weight="700" text-anchor="middle" fill="#172938">16</text>
+  <line x1="25" y1="151" x2="915" y2="151" stroke="#D8E2E9" stroke-width="1"/>
+  <text x="25" y="183" font-family="Segoe UI" font-size="18" font-weight="400" text-anchor="start" fill="#172938">Wind field (.wnd)</text>
+  <text x="25" y="225" font-family="Segoe UI" font-size="18" font-weight="400" text-anchor="start" fill="#172938">Scalar file (.scl)</text>
+  <path d="M243.5 177 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M312.5 177 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M381.5 177 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M450.5 177 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M519.5 177 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M588.5 177 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M657.5 177 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M726.5 177 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M795.5 177 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M864.5 177 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M243.5 218 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M312.5 218 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M381.5 218 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M452.5 213 l10 10 M462.5 213 l-10 10" fill="none" stroke="#9C431F" stroke-width="3" stroke-linecap="round"/>
+  <path d="M519.5 218 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M588.5 218 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M657.5 218 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M726.5 218 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M795.5 218 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M864.5 218 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="25" y1="242" x2="915" y2="242" stroke="#D8E2E9" stroke-width="1"/>
+  <text x="25" y="285" font-family="Segoe UI" font-size="18" font-weight="700" text-anchor="start" fill="#172938">On Continue</text>
+  <rect x="219" y="254" width="201" height="48" fill="#E6F2F2"/>
+  <rect x="426" y="254" width="477" height="48" fill="#FAECE5"/>
+  <text x="319.5" y="285" font-family="Segoe UI" font-size="21" font-weight="700" text-anchor="middle" fill="#0C636D">Keep 7–9</text>
+  <text x="664.5" y="285" font-family="Segoe UI" font-size="21" font-weight="700" text-anchor="middle" fill="#9C431F">Recompute 10–16</text>
+  <path d="M27 331 l5 5 10 -11" fill="none" stroke="#0C636D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="53" y="337" font-family="Segoe UI" font-size="16" font-weight="400" text-anchor="start" fill="#43596A">Valid file</text>
+  <path d="M160 326 l10 10 M170 326 l-10 10" fill="none" stroke="#9C431F" stroke-width="3" stroke-linecap="round"/>
+  <text x="184" y="337" font-family="Segoe UI" font-size="16" font-weight="400" text-anchor="start" fill="#43596A">Missing file</text>
+  <text x="25" y="369" font-family="Segoe UI" font-size="18" font-weight="400" text-anchor="start" fill="#172938">Continue schedules 11–16 again even though their wind and scalar files already exist.</text>
+</svg>

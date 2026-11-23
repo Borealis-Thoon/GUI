@@ -6,6 +6,12 @@ The screenshots show sample counts in the Windows GUI. In the **Done** column, `
 
 The captures are from the Windows Release build of [GUI commit 8028f10](https://github.com/Borealis-Thoon/GUI/commit/8028f10c5c58a3a4e998d6d873d94bab2975059b). In the four-worker Start/Continue check, stock GRAMM assigned 16 original situations to ranges 1–5, 6–10, 11–15 and 16. The [corrected engine](https://github.com/GralDispersionModel/GRAMM/pull/34) used ranges 1–2, 3–4, 5–6 and 7–16 for the same input. The GUI retained the fixed-direction header when it read the eight appended zero-frequency sunrise rows.
 
+## Where Continue resumes
+
+![For a worker assigned situations 7–16, a missing scalar file at 10 leaves 7–9 available for reuse and schedules 10–16 again.](continue-restart-point.png)
+
+The example uses a copy of the 16-situation test project. With just `00010.scl` omitted, the GUI scheduled 10–16 for the fourth worker and skipped the other three workers. With all files present it skipped all four. This check called the restart planner without launching GRAMM. [Planner result](continue-example.json) · [Vector figure](continue-restart-point.svg)
+
 ## Reproduce the sunrise scheduling check
 
 Use .NET 10, the GUI source from the pull request and the [stock GRAMM source at 1cfd22d](https://github.com/GralDispersionModel/GRAMM/tree/1cfd22dfa3a26de39ee050af0e92324b9b1b96e7). Run the following in PowerShell from the directory containing this README, with the two paths set to your checkouts.

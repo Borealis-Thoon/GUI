@@ -19,7 +19,11 @@
 
 ## Measured results
 
-The table reports the **final corrected engine** at [`58fcb6f`](https://github.com/Borealis-Thoon/GRAMM/commit/58fcb6f4f480cf688882e71f453eee93a989b560). Each cell is the median of four runs. The gap is calculated within each run before taking the median.
+These measurements used the **final corrected engine** at [`58fcb6f`](https://github.com/Borealis-Thoon/GRAMM/commit/58fcb6f4f480cf688882e71f453eee93a989b560). Each layout ran four times after warm-up. The runtime gap was calculated within each run before taking the median.
+
+![Process lifetimes by worker. With weighted ranges, the four medians fall between 29.41 and 34.39 seconds. Small ticks mark individual runs.](gramm_worker_lifetimes.png)
+
+To reproduce the figure, run `python plot_worker_lifetimes.py fixed worker-lifetimes.png` from this directory with Matplotlib installed. The script writes the PNG to the path you supply. [Plot source](plot_worker_lifetimes.py) · [Per-worker measurements](fixed/worker_times.csv)
 
 | Wall-clock metric | Equal-count ranges | Weighted ranges | Change |
 |---|---:|---:|---:|
