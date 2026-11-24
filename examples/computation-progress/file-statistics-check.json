@@ -1,0 +1,67 @@
+{
+  "gui": {
+    "baseline": "8629de206a0898783bbe84690f23e473a1a3306d",
+    "tested_source": "61df7cd07c9646b8c0cd865b4fc77f603ea7b869",
+    "tested_windows_x64_dll_sha256": "54d30885d79d6b2ae7b509e9d0da9fa15b8e83052637223e86bc67032738ebb4"
+  },
+  "run": {
+    "os": "Windows x64",
+    "gpu": "AMD Radeon RX 9070 XT",
+    "backend": "HIP",
+    "weather_situations": 72,
+    "gpu_runs_per_build": 1,
+    "gramm_workers": 4,
+    "original_gramm_situations": 16,
+    "unpacked_files": "Nine .con members were extracted from the run's GRZ archives during dispersion. Six more were extracted after exit in the updated run."
+  },
+  "first_nonzero_file_display": {
+    "from": "First GPU metrics record observed on disk",
+    "observation": "The test sampled files and GUI labels approximately every 80 ms plus message processing and file enumeration.",
+    "baseline_seconds": 20.115,
+    "updated_seconds": 0.664
+  },
+  "screenshot": {
+    "gpu_results": "16/72",
+    "gramm_wind_fields": "5/16",
+    "grz": {
+      "files": 16,
+      "bytes": 493055
+    },
+    "con": {
+      "files": 9,
+      "bytes": 158448
+    },
+    "concentration_display": {
+      "files": 25,
+      "bytes_on_disk": 651503,
+      "displayed_mb": 0.7
+    },
+    "gff": {
+      "files": 1,
+      "bytes": 110419,
+      "displayed_mb": 0.1
+    },
+    "crop_sha256": "8c119c7ff12f9c72079ba0c4ce347bddbf9beb39a4996bc2f361e00b8d7ba26c",
+    "expanded_sha256": "13522d18fe227fac341585374e239d3244e5c24f6ae0cb42efc9f949c58fb518"
+  },
+  "completed_outputs": {
+    "grz": 72,
+    "unpacked_con": 9,
+    "physical_concentration_bytes": 2381169,
+    "baseline_settled": {
+      "displayed_files": 9,
+      "displayed_mb": 0.2
+    },
+    "updated_at_exit": {
+      "displayed_files": 81,
+      "displayed_mb": 2.4
+    },
+    "updated_after_six_late_unpacked_files": {
+      "displayed_files": 87,
+      "displayed_mb": 2.5
+    },
+    "gpu_results_per_build": 72,
+    "gral_exit_code_per_build": 0,
+    "grz_crc_checks_per_build": 72
+  }
+}
