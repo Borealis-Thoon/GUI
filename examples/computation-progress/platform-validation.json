@@ -1,0 +1,147 @@
+{
+  "gui_source": "251a746374e3b7ae44092b5ece25aeff02e593f8",
+  "prior_gui_source": "61df7cd07c9646b8c0cd865b4fc77f603ea7b869",
+  "gral_engine_source": "e298eb415ffdb3834cdbfab280c4d6382976b9c3",
+  "gramm_engine_source": "58fcb6f4f480cf688882e71f453eee93a989b560",
+  "strict_build": {
+    "switches": [
+      "-c",
+      "Release",
+      "-t:Rebuild",
+      "-warnaserror",
+      "-p:TreatWarningsAsErrors=true"
+    ],
+    "windows": {
+      "sdk": "10.0.401",
+      "baseline_release_warnings": 10,
+      "baseline_strict_errors": 10,
+      "warnings": 0,
+      "errors": 0,
+      "gui_sha256": "42d82fd6af53405df3b24a1fac27c236b6fe22e84cf1689ed5f8d6f157991fbd",
+      "added_suppressions": 0,
+      "existing_Gral_csproj_changed": false
+    },
+    "linux": {
+      "platform": "WSL2 Ubuntu 24.04.5 x64",
+      "runtime": "Mono 6.8",
+      "project": "linux/Gral.Mono.csproj",
+      "warnings": 0,
+      "errors": 0,
+      "gui_sha256": "5bddfc2ffcfb03db4b1fd16407b8613740040a3c9a38cefe2f7a8ad938012bd3",
+      "repository_source_files_matched_to_pdb": 389
+    }
+  },
+  "warnings_repaired": {
+    "MSB3884": 1,
+    "CS0168": 2,
+    "CS8073": 4,
+    "CS4014": 1,
+    "CS0649": 2,
+    "recommended_rule_ids_and_warning_severities_matched": 62
+  },
+  "gpu_regression": {
+    "device": "AMD Radeon RX 9070 XT",
+    "backend": "HIP",
+    "runs": "One complete 72-situation run and a separate in-progress stop test per platform.",
+    "timing_definition": "Elapsed time from first observed .grz archive to first nonzero count in the GUI.",
+    "windows": {
+      "ordered_results": 72,
+      "engine_exit_code": 0,
+      "crc_checked_grz": 72,
+      "seconds_to_first_file_count": 0.577,
+      "mixed_files": 25,
+      "mixed_bytes": 651503,
+      "with_9_added_con_at_exit": 81,
+      "after_6_more_con": 87,
+      "flow_files": 1,
+      "flow_bytes": 110419,
+      "windows_gramm_workers": 4,
+      "original_wind_fields_complete": 16,
+      "gpu_stop": {
+        "completed": 4,
+        "planned": 72,
+        "exit_code": 0,
+        "seconds_to_stopped_label": 0.96
+      },
+      "cpu_stop": {
+        "engine_cancelled": true,
+        "exit_code": 0
+      }
+    },
+    "linux": {
+      "ordered_results": 72,
+      "engine_exit_code": 0,
+      "crc_checked_grz": 72,
+      "seconds_to_first_file_count": 0.937,
+      "mixed_files": 19,
+      "mixed_bytes": 433948,
+      "with_9_added_con_at_exit": 81,
+      "after_6_more_con": 87,
+      "flow_files": 1,
+      "flow_bytes": 110974,
+      "gpu_stop": {
+        "completed": 2,
+        "planned": 72,
+        "exit_code": 0,
+        "seconds_to_stopped_label": 0.798
+      },
+      "copy_cores_to_project": true,
+      "actual_engine_location": "Original distribution",
+      "engine_files_copied": 0
+    }
+  },
+  "linux_gramm": {
+    "selected_and_verified": [
+      "Linux GRAMM apphost",
+      "managed GRAMM.dll"
+    ],
+    "workers": 4,
+    "original_situations": 16,
+    "wind_and_scalar_pairs": 24,
+    "missing_scalar_fixture": "00016.scl",
+    "partial_continue": {
+      "workers": 1,
+      "unchanged_files_by_sha256_and_mtime": 46,
+      "recomputed": [
+        "00016.wnd",
+        "00016.scl"
+      ],
+      "decompressed_scalar_payload_matched": true
+    },
+    "clean_continue": {
+      "workers_started": 0,
+      "unchanged_files_by_sha256_and_mtime": 48
+    },
+    "native_stop_retry": {
+      "failed_stop_preserved_control_file": true,
+      "confirmed_stop_targeted_project_workers": true,
+      "continue_completed": 16,
+      "clean_retry_preserved_files": 48
+    },
+    "failed_worker_label": "Instance 1 exited (7)"
+  },
+  "other_checks": {
+    "windows_cpu_stop_timeout_and_retry": true,
+    "concurrent_windows_project_isolation": true,
+    "close_during_pending_stop": true,
+    "linux_dpi_row_paint": true,
+    "linux_file_delete_buttons_visible_and_cancel_preserved_files": true,
+    "headless_mono_smoke_checks": 4
+  },
+  "images": [
+    {
+      "name": "linux-gral-gpu.png",
+      "width": 819,
+      "height": 474,
+      "rgb_matches_original": true,
+      "sha256": "f3bf7838cd04c54ca766f2f974f65d5f2a580eafc0f3df0d196b410c2a69bd78"
+    },
+    {
+      "name": "linux-gramm-continue.png",
+      "width": 819,
+      "height": 474,
+      "rgb_matches_original": true,
+      "sha256": "830a3b2ba45b74faeabffc71bf28fd311f4bf53f27a776e591725bf6ecc7141a"
+    }
+  ]
+}
